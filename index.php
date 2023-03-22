@@ -3,8 +3,25 @@
 
   <!-- Centered link -->
   <div class="topnav-centered">
-    <a href="add_offers" class="active">add_offe</a>
-    <a href="view_offers" class="active">view_offers</a>
+   <button> Take product photo</button>
+   <button> place order</button>
+   <div class="slidecontainer">
+       <h1>price per kg:</h1>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+   <div class="slidecontainer">
+       <h1>max price:</h1>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+       <div class="slidecontainer">
+       <h1>min price:</h1>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+  <div class="slidecontainer">
+       <h1>exprassion date:</h1>
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+<textarea>description:</textarea>
   </div>
 
   <!-- Left-aligned links (default) -->
@@ -18,6 +35,44 @@
 
 </div>
 <style>
+    .slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
     .topnav {
   position: relative;
   background-color: #333;
