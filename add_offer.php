@@ -1,4 +1,5 @@
-<php>
+<?php
+?>
 <div class="topnav">
 
   <!-- Centered link -->
