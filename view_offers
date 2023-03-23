@@ -1,0 +1,5 @@
+<input> search: <\input>
+<button> filter</button>
+<?php
+echo loading offers;
+?>
