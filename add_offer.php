@@ -1,5 +1,7 @@
-<php>
-<div class="topnav">
+<?php
+?>
+
+<div class="topnav">
 
   <!-- Centered link -->
   <div class="topnav-centered">
